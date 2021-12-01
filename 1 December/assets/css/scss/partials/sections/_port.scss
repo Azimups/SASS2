@@ -1,0 +1,75 @@
+#port{
+    width: 100%;
+    height: 1150px;
+    overflow: hidden;
+        width: 100%;
+        .row{
+            h2{
+                text-align: center;
+                padding-top:80px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 2px;
+            }
+            .item-types{
+                margin-top: 60px;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                    li{
+                        list-style: $list-style;
+                        a{
+                            color: $main-color;
+                            text-decoration: $list-style;
+                            text-transform: uppercase;
+                            font-family: "Montserrat";
+                            letter-spacing: 2px;
+                            font-size: 12px;
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+                
+            }
+            .items{
+                transition: all .6s ease-in-out;
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                .col-lg-3{
+                    height: 360px;
+                    a{
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            button{
+                padding: 15px 30px;
+                font-size: 10px;
+                a{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    margin-top: 20px;
+                    transition: 0.7s;
+                }
+                a{
+                    font-family: "Montserrat";
+                    text-decoration: none;
+                    letter-spacing: 2px;
+                }
+                &:hover{
+                    background-color: $main-color;
+                    transform-origin: left right;
+                    a{
+                        color: $secondary-color;
+                    }
+                }
+                display: block;
+                @include btn;
+            }
+        }
+}

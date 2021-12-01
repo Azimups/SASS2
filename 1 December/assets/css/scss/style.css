@@ -1,0 +1,337 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  background-color: black;
+}
+
+.navbar .navbar-brand {
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.navbar .nav-item {
+  font-size: 10px;
+  margin-right: 20px;
+}
+
+.navbar .nav-item a {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.navbar .nav-item a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.navbar .nav-item a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+#intro {
+  width: 100%;
+  height: 800px;
+}
+
+#intro .image {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(./partials/sections/section-images/intro.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./partials/sections/section-images/intro.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#intro .image .title {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#intro .image .title h1 {
+  font-size: 55px;
+  color: White;
+}
+
+#about {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+
+#about .container {
+  margin-top: 30px;
+}
+
+#about .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .container .row img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#about .container .row .title h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+#about .container .row .title h4 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+#about .container .row .title p {
+  color: #555555;
+}
+
+#about .container .row .title button {
+  margin-right: 10px;
+  border: 1px black solid;
+  background-color: White;
+  margin-top: 20px;
+  padding: 15px 30px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#about .container .row .title button a {
+  color: black;
+}
+
+#about .container .row .title button a {
+  font-family: "Montserrat";
+  font-size: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#about .container .row .title button:hover {
+  background-color: black;
+  -webkit-transform-origin: left right;
+          transform-origin: left right;
+}
+
+#about .container .row .title button:hover a {
+  color: White;
+}
+
+#offer {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+#offer .container {
+  width: 1190px;
+}
+
+#offer .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#offer .container .row .col-lg-3 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#offer .container .row .col-lg-3 i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#offer .container .row h2 {
+  text-align: center;
+  padding-top: 110px;
+}
+
+#offer .container .row h4 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 2em;
+}
+
+#offer .container .row p {
+  line-height: 2em;
+  color: #555555;
+}
+
+.assessment {
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.assessment .col-lg-3 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.assessment .col-lg-3 i {
+  font-size: 24px;
+  color: White;
+}
+
+.assessment .col-lg-3 p {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: White;
+  line-height: 2em;
+}
+
+.assessment .col-lg-3 h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+#port {
+  width: 100%;
+  height: 1150px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#port .row h2 {
+  text-align: center;
+  padding-top: 80px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+#port .row .item-types {
+  margin-top: 60px;
+}
+
+#port .row .item-types ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+#port .row .item-types ul li {
+  list-style: none;
+}
+
+#port .row .item-types ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 10px 15px;
+}
+
+#port .row .items {
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#port .row .items .col-lg-3 {
+  height: 360px;
+}
+
+#port .row .items .col-lg-3 a img {
+  width: 100%;
+  height: 100%;
+}
+
+#port .row button {
+  padding: 15px 30px;
+  font-size: 10px;
+  display: block;
+  border: 1px black solid;
+  background-color: White;
+}
+
+#port .row button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#port .row button a {
+  font-family: "Montserrat";
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#port .row button:hover {
+  background-color: black;
+  -webkit-transform-origin: left right;
+          transform-origin: left right;
+}
+
+#port .row button:hover a {
+  color: White;
+}
+
+#port .row button a {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

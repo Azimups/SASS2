@@ -1,0 +1,7 @@
+@mixin btn {
+    border: 1px rgb(0, 0, 0) solid;
+    background-color: $secondary-color;
+    a{
+        color: black;
+    }
+}
